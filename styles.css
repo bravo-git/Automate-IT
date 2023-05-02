@@ -1,0 +1,48 @@
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: gray;
+}
+
+.right {
+  right: 0;
+  background-color: indianred;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+/*  width: 150px;*/
+  border-radius: 50%;
+  max-width: 100%;  
+/*height: auto;  */
+}
+
+button{
+  border-radius: 0.8rem;
+}
+
+.p1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.0rem;
+}
+
+.p2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.0rem;
+}
