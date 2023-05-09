@@ -11,21 +11,33 @@
 
 <body>
 
+<!-- <script type="text/javascript" src="myfirst.js"> -->
+
+
+
+
 <div class="split left">
   <div class="centered">
-    <button ><img src="on.png" alt="POWER ON THE MACHINES" width="120.2rem" height="120.2rem"></button>
+    <button id="on"><img src="on.png" alt="POWER ON THE MACHINES" width="120.2rem" height="120.2rem"></button>
     <h2><p class="p2">POWER ON THE MACHINES.</p></h2>
   </div>
 </div>
 
-
 <div class="split right">
   <div class="centered">
-    <button><img src="soff.png" alt="POWER OFF THE MACHINES" width="120.2rem" height="120.2rem"></button>
+    <button onclick="this.innerHTML = 'Machines have been powered off!'" onclick="fun()"><img src="soff.png" alt="POWER OFF THE MACHINES" width="120.2rem" height="120.2rem"><br></button>
     <h2><p class="p2">POWER OFF THE MACHINES.</p></h2>
   </div>
 </div>
+
+<script>
+  const on_btn = document.getElementById('on');
+  on_btn.addEventListener('click', () => {
+    console.log('calling');
+  })
+</script>
 </body>
+
 
 </html>
 
