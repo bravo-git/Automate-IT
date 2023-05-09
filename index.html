@@ -1,43 +1,46 @@
 <<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>ASP Portal </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>ASP Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <div class="split left">
+      <div class="centered">
+        <button id="on">
+          <img
+            src="on.png"
+            alt="POWER ON THE MACHINES"
+            width="120.2rem"
+            height="120.2rem"
+          />
+        </button>
+        <h2><p class="p2">POWER ON THE MACHINES.</p></h2>
+      </div>
+    </div>
 
-<!-- <script type="text/javascript" src="myfirst.js"> -->
+    <div class="split right">
+      <div class="centered">
+        <button id="off">
+          <img
+            src="soff.png"
+            alt="POWER OFF THE MACHINES"
+            width="120.2rem"
+            height="120.2rem"
+          /><br />
+        </button>
+        <h2><p class="p2">POWER OFF THE MACHINES.</p></h2>
+      </div>
+    </div>
 
-
-
-
-<div class="split left">
-  <div class="centered">
-    <button id="on"><img src="on.png" alt="POWER ON THE MACHINES" width="120.2rem" height="120.2rem"></button>
-    <h2><p class="p2">POWER ON THE MACHINES.</p></h2>
-  </div>
-</div>
-
-<div class="split right">
-  <div class="centered">
-    <button onclick="this.innerHTML = 'Machines have been powered off!'" onclick="fun()"><img src="soff.png" alt="POWER OFF THE MACHINES" width="120.2rem" height="120.2rem"><br></button>
-    <h2><p class="p2">POWER OFF THE MACHINES.</p></h2>
-  </div>
-</div>
-
-<script>
-  const on_btn = document.getElementById('on');
-  on_btn.addEventListener('click', () => {
-    console.log('calling');
-  })
-</script>
-</body>
-
-
+    <script src="dist/bundle.js"></script>
+  </body>
 </html>
-
